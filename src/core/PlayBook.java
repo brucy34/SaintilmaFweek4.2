@@ -1,23 +1,18 @@
 package core;
 
-import core.model.DAO;
-import core.model.Expressions;
-import core.tools.Display;
-import core.tools.Utils;
+import core.controller.*;
 
+import core.view.*;
 
 public class PlayBook {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		        Display.showResult(Utils.sum(5,5));
-		        DAO.getInstance().getExpressionList().add(new Expressions("35+15x20"));
-		        for (Expressions expression:DAO.getInstance().getExpressionList()){
-		            Display.showResult(expression.getExprs()+"="+expression.resolveExprs());
-
+		           
+		        
+		        System.out.println("Le resultat est:"+Controller.calcul(Interface.app(Interface.menu())));
+		        main(args);
 		        }
 		    }
-	}
 
 
