@@ -12,7 +12,7 @@ public class PlayBook {
 		// TODO Auto-generated method stub
 		
 		        Display.showResult(Utils.sum(5,5));
-		        DAO.getInstance().getExpressionList().add(new Expressions("35+15x02"));
+		        DAO.getInstance().getExpressionList().add(new Expressions("35+15x20"));
 		        for (Expressions expression:DAO.getInstance().getExpressionList()){
 		            Display.showResult(expression.getExprs()+"="+expression.resolveExprs());
 
